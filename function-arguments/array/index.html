@@ -12,7 +12,7 @@
 		var addon = require('./build/Release/hello')
 		$(document).ready(function(){
 			$('#test-addon-btn').click(function(){
-				console.log(addon.hello());
+				console.log(addon.passArray([1,2,3,4,5,6,7,9]));
 			});
 		});
 	</script>

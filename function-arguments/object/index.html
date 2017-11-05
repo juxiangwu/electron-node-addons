@@ -12,7 +12,7 @@
 		var addon = require('./build/Release/hello')
 		$(document).ready(function(){
 			$('#test-addon-btn').click(function(){
-				console.log(addon.hello());
+				console.log(addon.computeArea({width:10,height:20}));
 			});
 		});
 	</script>

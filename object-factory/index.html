@@ -12,7 +12,9 @@
 		var addon = require('./build/Release/hello')
 		$(document).ready(function(){
 			$('#test-addon-btn').click(function(){
-				console.log(addon.hello());
+				var obj1 = addon('hello')
+				var obj2 = addon(',world')
+				console.log(obj1.msg,obj2.msg)
 			});
 		});
 	</script>

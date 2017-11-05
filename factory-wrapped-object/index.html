@@ -9,10 +9,11 @@
 	<script>if (typeof module === 'object') {window.jQuery = window.$ = module.exports;};</script>
 	
 	<script>
-		var addon = require('./build/Release/hello')
+		var createObject = require('./build/Release/hello')
 		$(document).ready(function(){
 			$('#test-addon-btn').click(function(){
-				console.log(addon.hello());
+				const obj = createObject(10);
+				console.log(obj.plusOne());
 			});
 		});
 	</script>
